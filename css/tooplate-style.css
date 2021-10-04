@@ -103,6 +103,14 @@ footer a:link, footer a:visited {
   font-weight: 300;
 }
 
+.icons{
+  display: flex;
+  justify-content: space-between;
+}
+.icon{
+  width: 50px;
+}
+
 .tm-content {
   padding-bottom: 50px;
   display: flex;
