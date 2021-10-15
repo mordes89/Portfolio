@@ -17,8 +17,9 @@ body {
 }
 
 a {
-  transition: all 0.2s;
+  transition: 0.8s;
 }
+
 
 footer a:link, footer a:visited {
 	color: #FFF;
@@ -160,6 +161,7 @@ footer a:link, footer a:visited {
   display: inline-block;
   margin-left: 40px;
   margin-top: 25px;
+  width: 200px;
 }
 
 .tm-link:focus,
@@ -169,7 +171,7 @@ footer a:link, footer a:visited {
 }
 
 .tm-bottom-container {
-  position: absolute;
+  position: fixed;
   bottom: 0;
   left: 0;
 }
@@ -199,7 +201,7 @@ footer {
 }
 
 .tm-gallery-item {
-  margin: 0 10px;
+  margin: 20px;
 }
 
 .slick-dots {
@@ -211,7 +213,7 @@ footer {
   width: 40px;
   height: 40px;
   margin: 5px 3px;
-  transition: all 0.2s;
+  transition: all 0.5s;
 }
 
 .slick-dots li:hover,
@@ -269,11 +271,14 @@ footer {
   font-size: 1.25em;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
+  transition: transform 0.9s;  
+
 }
 
 .grid figure figcaption::before,
 .grid figure figcaption::after {
   pointer-events: none;
+  transition: transform 0.9s;  
 }
 
 .grid figure figcaption,
@@ -283,6 +288,7 @@ footer {
   left: 0;
   width: 100%;
   height: 100%;
+  transition: transform 0.9s;  
 }
 
 /* Anchor will cover the whole item by default */
@@ -293,6 +299,8 @@ footer {
   white-space: nowrap;
   font-size: 0;
   opacity: 0;
+  transition: transform 0.9s;  
+
 }
 
 .grid figure h2 {
@@ -317,15 +325,31 @@ footer {
 /*-----------------*/
 /***** Goliath *****/
 /*-----------------*/
+.flex-work{
+  display: flex;
+  flex-direction:column;
+  margin: 20px;
 
+}
 figure.effect-goliath {
-  background: #df4e4e;
+  background: rgba(255, 255, 255, 0.8);
+  box-sizing: border-box;
+  border-radius: 20px;
+  cursor: pointer;
+
+
 }
 
 figure.effect-goliath img,
-figure.effect-goliath h2 {
-  -webkit-transition: -webkit-transform 0.35s;
-  transition: transform 0.35s;
+figure.effect-goliath h2, 
+figure.effect-goliath figcaption {
+  -webkit-transition: -webkit-transform 0.50s;
+  transition: transform 0.50s;
+  width: 500px;
+  height: 300px;
+  box-sizing: border-box;
+  border-radius: 20px;
+  cursor: pointer;
 }
 
 figure.effect-goliath img {
@@ -334,8 +358,9 @@ figure.effect-goliath img {
 }
 
 figure.effect-goliath h2 {
-  font-size: 1.3rem;
+  font-size: 1.6rem;
 }
+
 figure.effect-goliath h2,
 figure.effect-goliath p {
   position: absolute;
@@ -355,20 +380,35 @@ figure.effect-goliath p {
   transform: translate3d(0, 50px, 0);
 }
 
-figure.effect-goliath:hover img {
-  -webkit-transform: translate3d(0, -80px, 0);
-  transform: translate3d(0, -80px, 0);
+figcaption {
+  display: none;
+  transition: transform 0.9s;  
+}
+
+figure.effect-goliath:hover img{
+  -webkit-transform: translate3d(0, -40px, 0);
+  transform: scale(1.2) translate3d(0, -40px, 0);
 }
 
 figure.effect-goliath:hover h2 {
+  display: contents;
   -webkit-transform: translate3d(0, -100px, 0);
   transform: translate3d(0, -100px, 0);
 }
 
 figure.effect-goliath:hover p {
+  display: contents;
+  text-align: center;
   opacity: 1;
-  -webkit-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0, -100px, 0);
+  transform: translate3d(0, -100px, 0);
+}
+
+figure.effect-goliath:hover figcaption {
+  transition: transform 0.9s;    
+  display: contents;
+  -webkit-transform: translate3d(0, -100px, 0);
+  transform: translate3d(0, -100px, 0);  
 }
 
 /* Contact */
