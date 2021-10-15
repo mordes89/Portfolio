@@ -127,17 +127,19 @@ footer a:link, footer a:visited {
   font-size: 3.4rem;
   margin-left: 40px;
   text-transform: uppercase;
+  color: #827eb4;
 }
 
 .tm-textbox {
-  padding: 45px;
+  padding: 25px;
   font-size: 1.1rem;
-  color: #c5c7c6;
+  color: #ca8a2a;
+  font-weight: bold;
   line-height: 1.8;
 }
 
 .tm-textbox-2 {
-  padding: 60px 40px 60px;
+  padding: 30px 40px 30px;
 }
 
 .tm-section-0 {
