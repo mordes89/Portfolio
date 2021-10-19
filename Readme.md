@@ -5,9 +5,6 @@
 
 # [Mike Schnall Portfolio]()
 
-## This is my portfolio website!
-<br></br>
-
 # Visitors to the website can: 
 * Read a brief introduction
 * Use the menu to navigate through the site
