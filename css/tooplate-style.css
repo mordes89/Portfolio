@@ -120,6 +120,11 @@ p{
   color: #cdffd0;
   font-size: 1.4rem;
   font-weight: 300;
+  text-align: center;
+}
+
+.tm-site-subtitle2{
+  text-align: center;
 }
 
 .icons{
@@ -750,7 +755,9 @@ figure.effect-goliath:hover figcaption {
 
   .tm-site-header-box {
     margin-bottom: 0;
+    text-align: center;
   }
+
 
   .tm-nav {
     align-self: flex-end;
