@@ -131,6 +131,12 @@ p{
   display: flex;
   justify-content: space-between;
 }
+.icons-second-row{
+  margin-top: 20px;
+  left: 50%;
+  display: flex;
+  justify-content: space-between;
+}
 .icon{
   width: 50px;
 }
