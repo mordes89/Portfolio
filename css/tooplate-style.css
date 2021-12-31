@@ -136,12 +136,17 @@ p{
   left: 50%;
   display: flex;
   justify-content: space-between;
+  width: 70%;
+  margin-left: 15%;
 }
 .icon{
   width: 50px;
 }
+.icon2{
+  width: 30px;
+}
 
-.icon:hover{
+.icon:hover, .icon2:hover{
   transition: transform 0.50s;
   -webkit-transform: translate3d(0%, -4px, 0);
   transform: scale(1.1) translate3d(0%, -4px, 0);
