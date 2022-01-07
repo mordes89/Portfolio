@@ -152,6 +152,9 @@ p{
   transform: scale(1.1) translate3d(0%, -4px, 0);
 }
 
+#projects-title{
+  margin-top:40px;
+}
 .tm-content {
   padding-bottom: 50px;
   display: flex;
