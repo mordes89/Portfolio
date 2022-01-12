@@ -77,8 +77,8 @@ footer a:link, footer a:visited {
 
 .tm-nav-link:link,
 .tm-nav-link:visited {
-  color: black;
-  background-color: rgb(233, 102, 102);
+  color: rgb(255, 255, 255);
+  background-color: rgb(99, 57, 57);
   padding: 10px 40px;
   display: block;
   margin-bottom: 6px;
@@ -89,7 +89,7 @@ footer a:link, footer a:visited {
 .tm-nav-link:hover,
 .tm-nav-link:focus {
   text-decoration: none;
-  color: #950000;
+  color: #fcf811;
 }
 
 .tm-nav-item:hover{
