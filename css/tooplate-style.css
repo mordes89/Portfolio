@@ -78,7 +78,7 @@ footer a:link, footer a:visited {
 .tm-nav-link:link,
 .tm-nav-link:visited {
   color: black;
-  background-color: white;
+  background-color: rgb(233, 102, 102);
   padding: 10px 40px;
   display: block;
   margin-bottom: 6px;
@@ -132,7 +132,7 @@ p{
   justify-content: space-between;
 }
 .icons-second-row{
-  margin-top: 20px;
+  /* margin-top: 20px; */
   left: 50%;
   display: flex;
   justify-content: space-between;
@@ -154,6 +154,8 @@ p{
 
 #projects-title{
   margin-top:40px;
+  color: white;
+  background-color: transparent;
 }
 .tm-content {
   padding-bottom: 50px;
