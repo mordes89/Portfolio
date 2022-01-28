@@ -130,6 +130,7 @@ p{
 .icons{
   display: flex;
   justify-content: space-between;
+  margin-bottom: 44px;
 }
 .icons-second-row{
   /* margin-top: 20px; */
@@ -374,9 +375,10 @@ footer {
 .tm-bg-dark-proj {
   background: rgba(0, 0, 0, 0.7);
   width: 600px;
-  margin: 20px;
+  /* margin: 20px; */
   text-align: justify;
   border-radius: 38px;
+  margin-bottom: 44px;
 
 }
 
