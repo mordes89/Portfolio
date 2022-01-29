@@ -393,8 +393,8 @@ footer {
 
   -webkit-transition: -webkit-transform 0.50s;
   transition: transform 0.50s;
-  width: 600px;
-  height: 400px;
+  width: 560px;
+  height: 360px;
   box-sizing: border-box;
   border-radius: 14px;
   cursor: pointer;
