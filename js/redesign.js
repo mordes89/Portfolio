@@ -1,4 +1,16 @@
 (() => {
+ const hero=document.querySelector('#hero'), background=hero.querySelector('.hero-bg'), next=hero.querySelector('.hero-img-next');
+ const motion=matchMedia('(prefers-reduced-motion: reduce)');
+ let interval=null, paused=false, ready=next.complete&&next.naturalWidth>0;
+ const pause=document.createElement('button');pause.type='button';pause.className='hero-pause';pause.textContent='Pause photos';pause.setAttribute('aria-label','Pause background photo slideshow');hero.append(pause);
+ function syncSlides(){clearInterval(interval);interval=null;pause.hidden=motion.matches||!ready;if(motion.matches)background.classList.remove('show-next');if(ready&&!paused&&!motion.matches&&!document.hidden)interval=setInterval(()=>background.classList.toggle('show-next'),11200);}
+ next.addEventListener('load',()=>{ready=true;syncSlides();});
+ next.addEventListener('error',()=>{ready=false;background.classList.remove('show-next');syncSlides();});
+ pause.addEventListener('click',()=>{paused=!paused;pause.textContent=paused?'Play photos':'Pause photos';pause.setAttribute('aria-label',paused?'Play background photo slideshow':'Pause background photo slideshow');syncSlides();});
+ motion.addEventListener('change',syncSlides);document.addEventListener('visibilitychange',syncSlides);syncSlides();
+ // Reveal the name once, using the original template's typing cadence.
+ const title=hero.querySelector('.hero-title');
+ if(!motion.matches){const name=title.textContent;title.textContent='';[...name].forEach((letter,index)=>{const character=document.createElement('span');character.className='name-character';character.textContent=letter;character.setAttribute('aria-hidden','true');character.style.animationDelay=`${500+index*150}ms`;title.append(character);});}
  const root=document.documentElement, buttons=[...document.querySelectorAll('.theme-btn')];
  function theme(value){if(!buttons.some(b=>b.dataset.theme===value))return;root.dataset.theme=value;buttons.forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.theme===value)));}
  try{theme(localStorage.getItem('mike-portfolio-theme'));}catch(_){}
