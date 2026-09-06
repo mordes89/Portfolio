@@ -28,3 +28,5 @@ html{scroll-padding-top:105px}body{font-size:15px}h1,h2,h3{font-weight:400}h2 em
 #hero .hero-title .name-character{color:inherit;opacity:0;animation:name-letter-in .12s ease-out forwards}
 @keyframes name-letter-in{from{opacity:0}to{opacity:1}}
 @media(prefers-reduced-motion:reduce){#hero .hero-title .name-character{opacity:1}}
+
+.archive-grid{grid-template-columns:1fr;max-width:760px}
