@@ -16,3 +16,4 @@ html{scroll-padding-top:105px}body{font-size:15px}h1,h2,h3{font-weight:400}h2 em
 #hero .btn-outline{background:rgba(5,12,22,.48)}
 .contact-content .original-icons{justify-content:center}
 @media(max-width:768px){#hero .hero-overlay{background:linear-gradient(90deg,rgba(5,12,22,.64),rgba(5,12,22,.2)),linear-gradient(0deg,rgba(5,12,22,.6),transparent 50%)}}
+.portrait-frame img{aspect-ratio:1;object-position:center}
