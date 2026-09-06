@@ -8,3 +8,11 @@ html{scroll-padding-top:105px}body{font-size:15px}h1,h2,h3{font-weight:400}h2 em
 #hero .btn-outline{color:#fff;border-color:#ffffff88}#hero .btn-outline:hover{background:#ffffff20;color:#fff}
 .original-icons{gap:20px;align-items:center}.original-icons a{display:inline-flex;padding:4px}.original-icons img{width:48px;height:48px;object-fit:contain;transition:transform .2s ease}.original-icons a:hover img,.original-icons a:focus-visible img{transform:translateY(-5px) scale(1.08)}
 #navbar .brand-name{display:inline}@media(max-width:768px){#navbar{gap:8px}#navbar .nav-brand{font-size:19px;white-space:nowrap}#navbar .theme-switcher{gap:1px}#navbar .theme-btn{width:19px;height:19px;border-width:3px}#navbar .nav-toggle{padding:7px;font-size:11px}}
+/* Keep the park visible, with localized contrast behind the text. */
+#hero .hero-overlay{background:linear-gradient(90deg,rgba(5,12,22,.63) 0%,rgba(5,12,22,.35) 52%,rgba(5,12,22,.10) 100%),linear-gradient(0deg,rgba(5,12,22,.55),transparent 45%)}
+#hero .hero-title,#hero .hero-tagline{text-shadow:0 2px 8px rgba(0,0,0,.85),0 0 28px rgba(0,0,0,.35)}
+#hero .hero-eyebrow,#hero .hero-subtitle{text-shadow:0 1px 4px #000,0 1px 12px #000}
+#hero .hero-subtitle{color:#fff}#hero .hero-tagline em,#hero .hero-eyebrow{color:#f5db83}
+#hero .btn-outline{background:rgba(5,12,22,.48)}
+.contact-content .original-icons{justify-content:center}
+@media(max-width:768px){#hero .hero-overlay{background:linear-gradient(90deg,rgba(5,12,22,.64),rgba(5,12,22,.2)),linear-gradient(0deg,rgba(5,12,22,.6),transparent 50%)}}
