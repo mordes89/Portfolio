@@ -24,8 +24,8 @@ http://www.tooplate.com/view/2109-the-card
     <link rel="stylesheet" href="css/tooplate-style.css" />
     <!-- Templatemo style -->
 
-    <link rel="browser icon" type="image/png" href="img\profile.ico">
-  </head>
+    <link rel="icon" type="image/png" href="img/profile.ico">
+  <link rel="stylesheet" href="css/refresh.css" /></head>
 
   <body>
     <!-- Loader -->
@@ -39,27 +39,18 @@ http://www.tooplate.com/view/2109-the-card
       <div class="tm-top-container">
         <!-- Menu -->
         <nav id="tmNav" class="tm-nav">
-          <a class="tm-navbar-menu" href="#">Menu</a>
-          <ul class="tm-nav-links">
+          <button class="tm-navbar-menu" type="button" aria-expanded="false" aria-controls="portfolio-menu">Menu <span aria-hidden="true">+</span></button>
+          <ul class="tm-nav-links" id="portfolio-menu">
             <li class="tm-nav-item active">
               <a href="#" data-linkid="0" data-align="right" class="tm-nav-link">Projects</a>
             </li>
             <li class="tm-nav-item">
               <a href="#" data-linkid="1" data-align="right" class="tm-nav-link">About</a>
             </li>
-            <li class="tm-nav-item">
-              <!-- <a
-                href="#"
-                data-linkid="2"
-                data-align="middle"
-                class="tm-nav-link">Projects</a>
-            </li> -->
-            <!-- <li class="tm-nav-item">
-              <a href="#" data-linkid="3" data-align="left" class="tm-nav-link">Contact</a>
-            </li> -->
+            
             <li class="tm-nav-item">
               <a
-                rel="nofollow" href="https://drive.google.com/file/d/1-7yeDMTJ80M4VKLxm0P0qZ3oOuKgXAlK/view?usp=sharing" target="_blank"
+                rel="nofollow" href="output/pdf/Mike-Schnall-Resume.pdf" target="_blank"
                 class="tm-nav-link external">Resume</a>
             </li>
             <li class="tm-nav-item">
@@ -82,18 +73,17 @@ http://www.tooplate.com/view/2109-the-card
 
         <!-- Site header -->
         <header class="tm-site-header-box tm-bg-dark">
-          <a href="https://www.linkedin.com/in/mike-mordechai-schnall/" target="_blank"><img class="headshot" src="img\profile.jpg" alt="Linkedin"></a>
+          <a href="https://www.linkedin.com/in/mike-mordechai-schnall/" target="_blank"><img class="headshot" src="img/profile.jpg" alt="Linkedin"></a>
           <h1 class="tm-site-title">Mike Schnall</h1>
-          <p class="mb-0 tm-site-subtitle">Software Engineer | New York, NY</p>
-          <p class="mb-0 tm-site-subtitle2">MMSchnall@gmail.com</p>
+          <p class="mb-0 tm-site-subtitle">Senior Solutions Engineer<br/>Informed.IQ | New York City area</p>
+          <p class="mb-0 tm-site-subtitle2"><a href="mailto:MMSchnall@gmail.com">MMSchnall@gmail.com</a></p>
 
-          <br>
-          <br>
+
           <div class="icons">  
-            <a href="https://drive.google.com/file/d/1-7yeDMTJ80M4VKLxm0P0qZ3oOuKgXAlK/view?usp=sharing" target="_blank"><img class="icon" src="img\cv.png" alt="Resume"></a>
-            <a href="https://www.linkedin.com/in/mike-mordechai-schnall/" target="_blank"><img class="icon" src="img\linkedin.png" alt="Linkedin"></a>
-            <a href="https://angel.co/u/mike-schnall" target="_blank"><img class="icon" src="img\angelist.png" alt="Angellist"></a>
-            <a href="https://github.com/mordes89" target="_blank"><img class="icon" src="img\gh2.png" alt="Github"></a>
+            <a href="output/pdf/Mike-Schnall-Resume.pdf" target="_blank"><img class="icon" src="img/cv.png" alt="Resume"></a>
+            <a href="https://www.linkedin.com/in/mike-mordechai-schnall/" target="_blank"><img class="icon" src="img/linkedin.png" alt="Linkedin"></a>
+            <a href="https://angel.co/u/mike-schnall" target="_blank"><img class="icon" src="img/angelist.png" alt="Angellist"></a>
+            <a href="https://github.com/mordes89" target="_blank"><img class="icon" src="img/gh2.png" alt="Github"></a>
           </div>
           <a href="#" data-linkid="1" data-align="right" class="tm-nav-link">MY JOURNEY</a>
           <!-- <a
@@ -104,9 +94,9 @@ http://www.tooplate.com/view/2109-the-card
                 class="tm-nav-link">PROJECTS
               </a>
           <div class="icons-second-row">  
-            <a href="https://chord-pro-generator.herokuapp.com/#/" target="_blank"><img class="icon2" src="img\CPG-logo.png" alt="Chord Pro Generator"></a>
-            <a href="https://mordes89.github.io/EXPLODING-HOT-POTATO-SOCCER-/" target="_blank"><img class="icon2" src="img\EHPS-logo.png" alt="Exploding Hot Potato Soccer"></a>
-            <a href="https://twofacedbook.herokuapp.com/#/login" target="_blank"><img class="icon2" src="img\TFB-logo.png" alt="TwoFacedBook"></a>
+            <a href="https://chord-pro-generator.herokuapp.com/#/" target="_blank"><img class="icon2" src="img/CPG-logo.png" alt="Chord Pro Generator"></a>
+            <a href="https://mordes89.github.io/EXPLODING-HOT-POTATO-SOCCER-/" target="_blank"><img class="icon2" src="img/EHPS-logo.png" alt="Exploding Hot Potato Soccer"></a>
+            <a href="https://twofacedbook.herokuapp.com/#/login" target="_blank"><img class="icon2" src="img/TFB-logo.png" alt="TwoFacedBook"></a>
           </div> -->
         </header>
       </div>
@@ -117,125 +107,75 @@ http://www.tooplate.com/view/2109-the-card
           <div class="col-md-12">
             <!-- Site content -->
             <div class="tm-content">
-              <!-- Section 0 Introduction -->
               <section class="tm-section tm-section-1">
                 <div class="tm-textbox tm-bg-dark">
-                  <h2 class="tm-section-title mb-3 font-weight-bold">
-                    Welcome!
-                  </h2>
-                  <p>
-                    My name is Mike Schnall, I am a Software Engineer and former database manager, sales rep, and combat soldier. 
-                    <br><br> In the past few years I was pursuing a degree in Economics while working full time for a luxury travel company. 
-                    While at the company, I created a database that reduced manual data-entry and automated reports. 
-                    The process was so fulfilling that I decided to pursue software engineering full time.
-                  </p>
-                  <p class="mb-0">
-                    <!-- Please tell your friends about Tooplate for free templates. This is 70% alpha background. -->
-                  </p>
-                  <a href="#" id="tm_about_link" data-linkid="2" class="tm-link">Read More</a>
+                  <div class="section-eyebrow">ABOUT ME</div>
+                  <h2 class="tm-section-title">Engineering with the client in mind.</h2>
+                  <p>I’m Mike Schnall, a Senior Solutions Engineer at Informed.IQ in the New York City area. I help enterprise clients integrate machine learning verification products, from defining technical requirements and onboarding to troubleshooting and ongoing optimization.</p>
+                  <p>My work combines Python and utility scripting, API integrations, data analysis, and close collaboration with engineering, product, and customer success. I also create documentation and training that help clients use the platform with confidence.</p>
+                  <p>I came to software engineering through operations: building a database and automating financial reporting showed me how much a well-designed system could improve day-to-day work. That led me to App Academy and, in 2022, to Informed.IQ.</p>
+                  <a href="#" id="tm_about_link" data-linkid="2" class="tm-link">My experience</a>
                 </div>
               </section>
-
-              <!-- Section 1 About Me -->
               <section class="tm-section tm-section-2">
-                <div class="tm-textbox tm-textbox-2 tm-bg-dark">
-                  <h2 class="tm-text-blue mb-4" id="about_me">About Me</h2>
-                  <p class="mb-4">
-                    I graduated App Academy, an immersive 16 week tech-bootcamp for full stack web 
-                    development. During the program I was spending 80-100 
-                    hours per week programming and learning new languages every few days. While in the program, I created two solo projects and one group 
-                    project that were built using technologies including: JavaScript, React, Redux, HTML, CSS, 
-                    Sass, Ruby, Rails, MongoDB, Node.js, Express.js, SQL, and many more.                      
-                  </p>
-                  <p class="mb-4">
-                    The program molded me into a confident software engineer. 
-                    <!-- You are NOT allowed to re-distribute this template file on
-                    your site for any reason. Thank you. -->
-                  </p>
-                  <a
-                    href="#"
-                    id="tm_work_link"
-                    data-linkid="0"
-                    class="tm-link m-0"
-                    >Projects</a
-                  >
-                </div>                    
-                    
+                <div class="tm-textbox tm-bg-dark">
+                  <div class="section-eyebrow">MY JOURNEY</div>
+                  <h2 class="tm-section-title">Experience &amp; education</h2>
+                  <h3>Informed.IQ</h3>
+                  <p class="experience-meta">Senior Solutions Engineer · April 2022–present</p>
+                  <ul class="project-details">
+                    <li>Lead enterprise onboarding, define integration requirements, and troubleshoot complex technical issues.</li>
+                    <li>Develop utility scripts and analyze system and client activity to identify integration gaps and optimize partner APIs.</li>
+                    <li>Implemented architectural methodologies that eliminated more than 300,000 lines of legacy code.</li>
+                    <li>Partner with engineering, product, and customer success; write documentation and client training materials.</li>
+                  </ul>
+                  <h3>Get PEYD, LLC</h3>
+                  <p class="experience-meta">Database Manager and Bookkeeper · May 2015–June 2021</p>
+                  <p>Built and maintained the company database and automated data collection and financial reporting, reducing manual labor by more than 40%. Created custom reports and trained new hires.</p>
+                  <h3>Earlier experience</h3>
+                  <p>My background also includes roadside assistance at Delta Towing, security at Discount Bank, sales at FDNY Fire Zone, equipment management with Hapoel Jerusalem Basketball Club, and infantry service in the Israel Defense Forces.</p>
+                  <h3>Education</h3>
+                  <p>App Academy, Full Stack Web Development Bootcamp (June–October 2021).<br/>Queens College, CUNY, BA in Economics (2020), magna cum laude, GPA 3.878.</p>
+                  <p>I speak English and Hebrew fluently.</p>
+                  <a href="output/pdf/Mike-Schnall-Resume.pdf" target="_blank" rel="noopener" class="tm-link">View resume</a>
+                  <a href="#" id="tm_work_link" data-linkid="0" class="tm-link">School projects</a>
+                </div>
               </section>
 
               <!-- Section 2 Work (Gallery) -->
               <section class="tm-section tm-section-0 mx-auto flex-proj">
+                <div class="tm-textbox current-work">
+                  <div class="section-eyebrow">SENIOR SOLUTIONS ENGINEER · INFORMED.IQ</div>
+                  <h2 class="tm-section-title">From integration to impact.</h2>
+                  <p>I help enterprise clients turn complex verification requirements into working integrations. My work spans technical onboarding, API optimization, data analysis, and software architecture.</p>
+                  <a href="#" data-linkid="2" class="tm-nav-link experience-link">Explore my experience <span aria-hidden="true">&#8599;</span></a>
+                </div>
                 
-                <h1>Projects</h1>
+                <div class="project-intro"><div class="section-eyebrow">THE EARLY WORK</div><h2 class="archive-title">School Projects</h2><p class="archive-note">Early work from App Academy — preserved as a look back at my software engineering foundations.</p></div>
               
-                <a href="https://chord-pro-generator.herokuapp.com/#/" target="_blank">
-                  <section class="new1">
-                    <div class="tm-bg-dark-proj">
-                      <h2 class="" id="proj-name">Chord Pro Generator</h2>
-                      <div class="app-icons"> 
-                        <img src="img/cpg.jpg" alt="Image 1" class="project-img" />
-                      </div>
-                      <p class="proj-description">
-                        An app for songwriters that generates unique randomized chord progressions/songs. Created using MongoDB, Express, React, and Redux. 
-                          <li>Designed unique algorithms that dynamically create songs that display as sheet music to assist songwriters.</li>
-                          <li>Utilized Github to harmoniously collaborate with a team of four to create the entire website within a short 4-day deadline.</li>
-                          <li>Combined my knowledge of music-theory and programming to design and implement a complex and dynamic song generator.</li>
-                      </p>  
-                      <div class="app-icons">                
-                        <!-- <a href="https://mordes89.github.io/EXPLODING-HOT-POTATO-SOCCER-/" target="_blank"><img class="website-icon" src="img/ehps-pic.png" alt="game"></a> -->
-                        <a href="https://github.com/EddyMarshall/Chord_Pro_Generator" target="_blank"><img class="repo-icon" src="img\gh2.png" alt="Github Repo"></a>          
-                      </div>
-                    </div>  
-                  </section>
-                </a>
-  
-                <a href="https://mordes89.github.io/EXPLODING-HOT-POTATO-SOCCER-/" target="_blank">
-                <section class="new1">
-                  <div class="tm-bg-dark-proj">
-                    <h2 class="" id="proj-name">EXPLODING HOT POTATO SOCCER!</h2>
-                    <div class="app-icons"> 
-                      <img src="img/ehps-pic.png" alt="Image 1" class="project-img" />
-                    </div>
-                    <p class="proj-description">
-                      A soccer game played in a rectangular grid with two goals, two avatars, and a hot-potato/ball that explodes after a random amount of time.
-                        <li>Implemented vector-logic on the game-ball to enable users to manipulate ball direction and create a smooth gameplay experience.</li>
-                        <li>Employed Sprite-images using Javascript and CSS to manipulate character animation for on-screen enhanced UI and UX.</li>
-                        <li>Constructed a custom javascript algorithm that displays a moving-explosion image to the UI for an enhanced user experience.</li>
-                    </p>  
-                    <div class="app-icons">                
-                      <!-- <a href="https://mordes89.github.io/EXPLODING-HOT-POTATO-SOCCER-/" target="_blank"><img class="website-icon" src="img/ehps-pic.png" alt="game"></a> -->
-                      <a href="https://github.com/mordes89/EXPLODING-HOT-POTATO-SOCCER-" target="_blank"><img class="repo-icon" src="img\gh2.png" alt="Github Repo"></a>          
-                    </div>
-                  </div>  
-                </section>
-              </a>
-              
-              <a href="https://twofacedbook.herokuapp.com/#/login" target="_blank">
-                <section class="new1">
-                  <div class="tm-bg-dark-proj">
-                    <h2 class="" id="proj-name">TwoFacedBook</h2>
-                    <div class="app-icons"> 
-                      <img src="img/tfblive2.png" alt="Image 1" class="project-img" />
-                    </div>
-                    <p class="proj-description">
-                      A clone of Facebook created using Ruby on Rails, React (+hooks), and Redux. 
-                        <li>Leveraged AWS to incorporate upload ability of media in posts, bio photos, and cover photos for a vitalizing UI esthetic.</li>
-                        <li>Ensured full CRUD ability on users’ posts and bios, optimizing the customizability of the features.</li>
-                        <li>Incorporated dynamic Sass variables and mixins for efficient, dynamic, and DRY front-end code.</li>
-                    </p>  
-                    <div class="app-icons">                
-                      <!-- <a href="https://mordes89.github.io/EXPLODING-HOT-POTATO-SOCCER-/" target="_blank"><img class="website-icon" src="img/ehps-pic.png" alt="game"></a> -->
-                      <a href="https://github.com/mordes89/TwoFacedBook" target="_blank"><img class="repo-icon" src="img\gh2.png" alt="Github Repo"></a>          
-                    </div>
-                  </div>  
-                </section>
-              </a>    
-            </div>
-          </div>
-        </div>
-      </div>      
-    </div>
-
+<article class="tm-bg-dark-proj project-card">
+ <div class="project-heading"><span class="project-number">01 / APP ACADEMY</span><h3>Chord Pro Generator</h3></div>
+ <a class="project-preview" href="https://chord-pro-generator.herokuapp.com/#/" target="_blank" rel="noopener noreferrer"><img src="img/cpg.jpg" alt="Chord Pro Generator application screenshot" class="project-img" /></a>
+ <p class="proj-description">An app for songwriters that generates unique randomized chord progressions/songs. Created using MongoDB, Express, React, and Redux.</p>
+ <ul class="project-details"><li>Designed unique algorithms that dynamically create songs that display as sheet music to assist songwriters.</li><li>Utilized Github to harmoniously collaborate with a team of four to create the entire website within a short 4-day deadline.</li><li>Combined my knowledge of music-theory and programming to design and implement a complex and dynamic song generator.</li></ul>
+ <div class="project-actions"><a href="https://chord-pro-generator.herokuapp.com/#/" target="_blank" rel="noopener noreferrer">View project <span aria-hidden="true">&#8599;</span></a><a href="https://github.com/EddyMarshall/Chord_Pro_Generator" target="_blank" rel="noopener noreferrer"><img class="repo-icon" src="img/gh2.png" alt="" /> Source code</a></div>
+</article>
+<article class="tm-bg-dark-proj project-card">
+ <div class="project-heading"><span class="project-number">02 / APP ACADEMY</span><h3>EXPLODING HOT POTATO SOCCER!</h3></div>
+ <a class="project-preview" href="https://mordes89.github.io/EXPLODING-HOT-POTATO-SOCCER-/" target="_blank" rel="noopener noreferrer"><img src="img/ehps-pic.png" alt="EXPLODING HOT POTATO SOCCER! application screenshot" class="project-img" /></a>
+ <p class="proj-description">A soccer game played in a rectangular grid with two goals, two avatars, and a hot-potato/ball that explodes after a random amount of time.</p>
+ <ul class="project-details"><li>Implemented vector-logic on the game-ball to enable users to manipulate ball direction and create a smooth gameplay experience.</li><li>Employed Sprite-images using Javascript and CSS to manipulate character animation for on-screen enhanced UI and UX.</li><li>Constructed a custom javascript algorithm that displays a moving-explosion image to the UI for an enhanced user experience.</li></ul>
+ <div class="project-actions"><a href="https://mordes89.github.io/EXPLODING-HOT-POTATO-SOCCER-/" target="_blank" rel="noopener noreferrer">View project <span aria-hidden="true">&#8599;</span></a><a href="https://github.com/mordes89/EXPLODING-HOT-POTATO-SOCCER-" target="_blank" rel="noopener noreferrer"><img class="repo-icon" src="img/gh2.png" alt="" /> Source code</a></div>
+</article>
+<article class="tm-bg-dark-proj project-card">
+ <div class="project-heading"><span class="project-number">03 / APP ACADEMY</span><h3>TwoFacedBook</h3></div>
+ <a class="project-preview" href="https://twofacedbook.herokuapp.com/#/login" target="_blank" rel="noopener noreferrer"><img src="img/tfblive2.png" alt="TwoFacedBook application screenshot" class="project-img" /></a>
+ <p class="proj-description">A clone of Facebook created using Ruby on Rails, React (+hooks), and Redux.</p>
+ <ul class="project-details"><li>Leveraged AWS to incorporate upload ability of media in posts, bio photos, and cover photos for a vitalizing UI esthetic.</li><li>Ensured full CRUD ability on users’ posts and bios, optimizing the customizability of the features.</li><li>Incorporated dynamic Sass variables and mixins for efficient, dynamic, and DRY front-end code.</li></ul>
+ <div class="project-actions"><a href="https://twofacedbook.herokuapp.com/#/login" target="_blank" rel="noopener noreferrer">View project <span aria-hidden="true">&#8599;</span></a><a href="https://github.com/mordes89/TwoFacedBook" target="_blank" rel="noopener noreferrer"><img class="repo-icon" src="img/gh2.png" alt="" /> Source code</a></div>
+</article>
+</section>
+</div></div></div></div></div>
     <script src="js/jquery-1.11.0.min.js"></script>
     <script src="js/background.cycle.js"></script>
     <script src="slick/slick.min.js"></script>
@@ -249,46 +189,32 @@ http://www.tooplate.com/view/2109-the-card
       let links;
       let eachNavLink;
 
-      window.onload = function() {
+      window.addEventListener("DOMContentLoaded", function() {
         $("body").addClass("loaded");
-      };
+      });
 
       function navLinkClick(e) {
-        if ($(e.target).hasClass("external")) {
-          return;
-        }
-
+        const link = $(e.currentTarget);
+        if (link.hasClass("external")) return;
         e.preventDefault();
-
-        if ($(e.target).data("align")) {
-          pageAlign = $(e.target).data("align");
-        }
-
-        // Change bg image
+        const nextId = Number(link.data("linkid"));
+        if (!Number.isInteger(nextId)) return;
+        links.stop(true, true).hide().removeClass("open");
+        $(".tm-navbar-menu").attr("aria-expanded", "false");
+        if (nextId === currentImageId) return;
         previousImageId = currentImageId;
-        currentImageId = $(e.target).data("linkid");
+        currentImageId = nextId;
         bgCycle.cycleToNextImage(previousImageId, currentImageId);
-
-        // Change menu item highlight
-        $(`.tm-nav-item:eq(${previousImageId})`).removeClass("active");
-        $(`.tm-nav-item:eq(${currentImageId})`).addClass("active");
-
-        // Change page content
-        $(`.tm-section-${previousImageId}`).fadeOut(function(e) {
-          $(`.tm-section-${currentImageId}`).fadeIn();
-          // Gallery
-          if (currentImageId === 2) {
-            setupSlider();
-          }
-        });
-
-        adjustFooter();
+        $(".tm-nav-item").removeClass("active");
+        $(".tm-nav-item").eq(nextId === 0 ? 0 : 1).addClass("active");
+        $(".tm-section").stop(true, true).hide();
+        $(".tm-section-" + nextId).show();
       }
 
       $(document).ready(function() {
         // Set first page
         $(".tm-section").fadeOut(0);
-        $(".tm-section-0").fadeIn();
+        $(".tm-section-0").show();
 
         // Set Background images
         // https://www.jqueryscript.net/slideshow/Simple-jQuery-Background-Image-Slideshow-with-Fade-Transitions-Background-Cycle.html
@@ -321,6 +247,8 @@ http://www.tooplate.com/view/2109-the-card
         eachNavLink.on("click", navLinkClick);
 
         $(".tm-navbar-menu").click(function(e) {
+          e.preventDefault();
+          $(this).attr("aria-expanded", String(!links.hasClass("open")));
           if (links.hasClass("open")) {
             links.fadeOut();
           } else {
