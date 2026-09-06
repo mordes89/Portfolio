@@ -7,3 +7,4 @@ html{scroll-padding-top:105px}body{font-size:15px}h1,h2,h3{font-weight:400}h2 em
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{animation:none!important;transition:none!important}.reveal.pending{opacity:1;transform:none}}
 #hero .btn-outline{color:#fff;border-color:#ffffff88}#hero .btn-outline:hover{background:#ffffff20;color:#fff}
 .original-icons{gap:20px;align-items:center}.original-icons a{display:inline-flex;padding:4px}.original-icons img{width:48px;height:48px;object-fit:contain;transition:transform .2s ease}.original-icons a:hover img,.original-icons a:focus-visible img{transform:translateY(-5px) scale(1.08)}
+#navbar .brand-name{display:inline}@media(max-width:768px){#navbar{gap:8px}#navbar .nav-brand{font-size:19px;white-space:nowrap}#navbar .theme-switcher{gap:1px}#navbar .theme-btn{width:19px;height:19px;border-width:3px}#navbar .nav-toggle{padding:7px;font-size:11px}}
