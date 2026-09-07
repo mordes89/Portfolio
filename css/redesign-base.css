@@ -22,49 +22,13 @@
   --transition: all 0.3s ease;
 }
 
-[data-theme="ivory"] {
-  --bg-primary: #f5f0e8;
-  --bg-secondary: #e6dfd3;
-  --text-primary: #2c2c2c;
-  --text-muted: #5c5c5c;
-  --accent: #8c7322;
-  --accent-hover: #b5952c;
-  --border-color: rgba(0, 0, 0, 0.1);
-  --overlay-bg: rgba(245, 240, 232, 0.9);
-}
 
-[data-theme="jazz"] {
-  --bg-primary: #1a0d00;
-  --bg-secondary: #261400;
-  --text-primary: #f0e6d2;
-  --text-muted: #bdae93;
-  --accent: #c07a2a;
-  --accent-hover: #df8e31;
-  --border-color: rgba(255, 255, 255, 0.1);
-  --overlay-bg: rgba(26, 13, 0, 0.85);
-}
 
-[data-theme="crimson"] {
-  --bg-primary: #1a0008;
-  --bg-secondary: #26000c;
-  --text-primary: #f5e6eb;
-  --text-muted: #c2a3ad;
-  --accent: #d4af37;
-  --accent-hover: #f1c40f;
-  --border-color: rgba(255, 255, 255, 0.1);
-  --overlay-bg: rgba(26, 0, 8, 0.85);
-}
 
-[data-theme="emerald"] {
-  --bg-primary: #001a0d;
-  --bg-secondary: #002613;
-  --text-primary: #e6f5eb;
-  --text-muted: #a3c2af;
-  --accent: #d4af37;
-  --accent-hover: #f1c40f;
-  --border-color: rgba(255, 255, 255, 0.1);
-  --overlay-bg: rgba(0, 26, 13, 0.85);
-}
+
+
+
+
 
 /* Base Styles */
 * { box-sizing: border-box; margin: 0; padding: 0; }

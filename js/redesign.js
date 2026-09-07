@@ -11,13 +11,11 @@
  // Reveal the name once, using the original template's typing cadence.
  const title=hero.querySelector('.hero-title');
  if(!motion.matches){const name=title.textContent;title.textContent='';[...name].forEach((letter,index)=>{const character=document.createElement('span');character.className='name-character';character.textContent=letter;character.setAttribute('aria-hidden','true');character.style.animationDelay=`${500+index*150}ms`;title.append(character);});}
- const root=document.documentElement, buttons=[...document.querySelectorAll('.theme-btn')];
- function theme(value){if(!buttons.some(b=>b.dataset.theme===value))return;root.dataset.theme=value;buttons.forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.theme===value)));}
- try{theme(localStorage.getItem('mike-portfolio-theme'));}catch(_){}
- buttons.forEach(b=>b.addEventListener('click',()=>{theme(b.dataset.theme);try{localStorage.setItem('mike-portfolio-theme',b.dataset.theme);}catch(_){}}));
+ document.documentElement.dataset.theme='midnight';
  const menu=document.querySelector('#navToggle'), nav=document.querySelector('#navLinks');
  function close(){nav.classList.remove('active');menu.setAttribute('aria-expanded','false');}
  menu.addEventListener('click',()=>{const open=menu.getAttribute('aria-expanded')!=='true';nav.classList.toggle('active',open);menu.setAttribute('aria-expanded',String(open));});
+ document.addEventListener('click',e=>{if(!nav.contains(e.target)&&!menu.contains(e.target))close();});
  nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',close));
  document.addEventListener('keydown',e=>{if(e.key==='Escape'&&nav.classList.contains('active')){close();menu.focus();}});
  if('IntersectionObserver' in window&&!matchMedia('(prefers-reduced-motion: reduce)').matches){const observer=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.remove('pending');observer.unobserve(e.target);}}),{threshold:.06});document.querySelectorAll('.reveal').forEach(el=>{if(el.getBoundingClientRect().top>innerHeight){el.classList.add('pending');observer.observe(el);}});}
