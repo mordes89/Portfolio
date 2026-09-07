@@ -52,3 +52,5 @@ html{scroll-padding-top:98px}
 .portfolio-share{margin-top:72px;padding-top:56px;border-top:1px solid rgba(255,255,255,.15)}.share-qr .contact-download{margin-top:0}.share-qr h2{margin-bottom:20px}
 
 .contact-details{margin:24px auto 0;max-width:440px;line-height:1.8}.contact-details a{text-decoration:underline;text-underline-offset:3px}.contact-details strong{color:var(--text)}
+
+.page-share{margin-top:24px}.page-share button{display:inline-flex;align-items:center;gap:10px;cursor:pointer}.page-share p{overflow-wrap:anywhere}.page-share [hidden]{display:none}
