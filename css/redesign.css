@@ -46,3 +46,5 @@ html{scroll-padding-top:98px}
 @media(max-width:600px){#navbar{height:114px;display:flex;flex-direction:column;justify-content:center;gap:3px;padding:6px 3%}#navbar>.nav-brand{order:0;font-size:22px}.header-icons{order:1;gap:10px}.header-icons img{width:25px;height:25px}.header-icons a{padding:2px}#navbar .nav-toggle{order:2;font-size:10px;padding:3px 12px;line-height:1.3}#navbar .nav-links{right:3%;top:calc(100% + 5px);width:min(230px,94vw)}html{scroll-padding-top:130px}#hero{padding-top:165px}}
 
 .share-qr{text-align:center}.share-qr img{display:block;width:min(320px,100%);height:auto;margin:28px auto 20px;border-radius:10px}.share-qr p:last-child{font-size:13px}
+
+.contact-download{margin-top:32px}.contact-download p{margin:14px auto 0;max-width:420px;color:var(--text-muted)}
